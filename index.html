@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>KITT</title>
+
+    <link rel="SHORTCUT ICON" href="images/car.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/PC.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script/PC.js"></script>
+
+</head>
+<body id="body" onkeydown="keyBoardLed()">
+    <!--Imagem de Fundo-->
+     <div style='position:absolute;z-index:-1;left:0;top:0;width:100%;height:100%;' onkeydown="keyBoardLed()">        <img src='images/background/bgpDia.png' style='width:100%;height:99%;' alt='[]' id="background" />                  </div>
+
+    <!-- Parte inicial do carro (não corresponde a nenhuma tarefa) -->
+    <!--Botões do volante-->  
+    <input id="up" type="button" onclick="decreaseLed()"  style='background:url(images/up.png); background-repeat:no-repeat; position:absolute; width:22px; height:22px; left: 21.5%; top: 65.5%;' disabled="disabled" />
+    <input id="down" type="button" onclick="increaseLed()"  style='background:url(images/down.png); background-repeat:no-repeat; position:absolute; width:22px; height:22px; left: 21.5%; top: 79%;' disabled="disabled" />
+    <input id="enter" type="button" onclick="enterFunction()"  style='background:url(images/enter.png); background-repeat:no-repeat; position:absolute; width:22px; height:22px; left: 25.3%; top: 72%;' disabled="disabled" />
+    <input id="back" type="button" onclick="backFunction()"  style='background:url(images/back.png); background-repeat:no-repeat; position:absolute; width:22px; height:22px; left: 17.5%; top: 72%;' disabled="disabled" />
+    
+    <div id="rightHorn" onclick="honk()">                                                    <img src='images/rightHorn.png'  alt='[]' />                                         </div>
+    <div id="leftHorn" onclick="honk()">                                                     <img src='images/leftHorn.png'  alt='[]' />                                          </div>
+
+    <!--Botões imagens Login-->
+    <div onclick="fingerPrintConfirmation()">        <img src='images/fingerprint.png' alt='[]' id="fingerPrint" />    </div>
+    <div id="welcome">                                                <img src='images/welcome.gif' alt='[]' />        </div>
+    <div id="exit" onclick="exitFunction()">                          <img src='images/exit.png' alt='[]' />           </div>
+
+
+    <!--Botões do vidro-->
+    <div >        <img src='images/car.png' alt='[]' id="car" />             </div>
+    <div >        <img src='images/DriverStatus/personIcon.png' alt='[]' id="person"/>    </div>
+    <div >        <img src='images/help.png' alt='[]' id="help"/>            </div>
+
+
+    <!-- --------------------------------------------------------------- -->
+
+    <!-- Problemas do carro (Corresponde à primera funcionalidade) -->
+    <!--Imagens do vidro-->
+    <div id="sideViewAnalysis">  <img src='images/sideViewAnalysis.gif' alt='[]' />                 </div>
+    <div id="upViewAnalysis">    <img src='images/upViewAnalysis.gif' alt='[]' />                   </div>   
+    <div id="sideView">          <img src='images/sideViewFront.gif' alt='[]' />                    </div>
+    <div id="sideViewTires">     <img src='images/sideViewTires.gif' alt='[]' />                    </div>
+    <div id="upView">            <img src='images/upViewFront.gif' alt='[]' />                      </div>
+    <div id="upViewTires">       <img src='images/upViewTires.gif' alt='[]' />                      </div>
+
+    <div onclick="carAnalysis()">     <img src='images/carProblemsGray.png' alt='[]' id="carWhite" /></div>
+    <div onclick="displayProblems()"> <img src='images/list.png' alt='[]' id="listOfProblems"/>      </div>
+
+    <div id="warningVelas">      <img src='images/warningVelas.png' alt='[]' />                     </div>
+    <div id="warningBateria">    <img src='images/warningBateria.png' alt='[]' />                   </div>
+    <div id="warningFreios">     <img src='images/warningFreios.png' alt='[]' />                    </div>
+    <div id="warningMotor">      <img src='images/warningMotor.png' alt='[]' />                     </div>
+    <div id="warningPneus">      <img src='images/warningPneus.png' alt='[]' />                     </div>
+    <div id="warningSuspensao">  <img src='images/warningSuspensao.png' alt='[]' />                 </div>
+    
+    <div id="ok">                <img src='images/ok.png' alt='[]' />                               </div>
+    <div id="almostOk">          <img src='images/almostOk.png' alt='[]' />                         </div>
+
+    <div id="led">               <img src='images/pin.png' alt='[]' />                              </div>
+    <div >                       <img src='images/moreDetails.png' alt='[]' id="showDetails" />     </div>
+    <div id="impossibleDrive">   <img src='images/cancel.png' alt='[]' />                           </div>
+    <div >                       <img src='images/blackLoading.gif' alt='[]' id="loading" />        </div>
+
+    <div >                       <img src='images/vela.png' alt='[]' id="vela"/>                    </div>
+    <div >                       <img src='images/motor.png' alt='[]' id="motor"/>                  </div>
+    <div >                       <img src='images/Battery.png' alt='[]' id="battery"/>              </div>
+    <div >                       <img src='images/brakes.png' alt='[]' id="brakes"/>                </div>
+    <div >                       <img src='images/suspensao.png' alt='[]' id="suspension"/>         </div>
+    <div >                       <img src='images/tire.png' alt='[]' id="tires"/>                   </div>
+
+    <div >                       <img src='images/txtBattery.png' alt='[]' id="txtBattery"/>        </div>
+    <div >                       <img src='images/txtTires.png' alt='[]' id="txtTires"/>            </div>
+    <div >                       <img src='images/txtSuspension.png' alt='[]' id="txtSuspension"/>  </div>
+    <div >                       <img src='images/txtEngine.png' alt='[]' id="txtEngine"/>          </div>
+    <div >                       <img src='images/txtBrakes.png' alt='[]' id="txtBrakes"/>          </div>
+    <div >                       <img src='images/txtPlugs.png' alt='[]' id="txtPlugs"/>            </div>
+
+    <div id="repair">            <img src='images/carOffice.png' alt='[]' />                        </div>
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- Estado do condutor (Corresponde à segunda funcionalidade) -->
+    <!--Imagens do vidro-->
+    <div id="personAnalysis">       <img src='images/DriverStatus/person.gif' alt='[]' />              </div>
+
+    <div id="personDrowsiness">     <img src='images/DriverStatus/personDrowsiness.png' alt='[]' />    </div>
+    <div id="personDrunk">          <img src='images/DriverStatus/personDrunk.png' alt='[]' />         </div>
+    <div id="personSuperDrunk">     <img src='images/DriverStatus/personSuperDrunk.png' alt='[]' />    </div>
+    <div id="personOk">             <img src='images/DriverStatus/personOk.png' alt='[]' />            </div>
+
+    <div id="UnableDrive">          <img src='images/DriverStatus/UnableDrive.png' alt='[]' />         </div>
+    <div id="warningAlcohol">       <img src='images/DriverStatus/warningAlcohol.png' alt='[]' />      </div>
+    <div id="warningDrowsiness">    <img src='images/DriverStatus/warningDrowsiness.png' alt='[]' />   </div>
+    <div id="noDriverProblems">     <img src='images/DriverStatus/noProblems.png' alt='[]' />          </div>
+
+    <!-- --------------------------------------------------------------- -->
+    <!-- Ajuda (Funcionalidade de apoio) -->
+    <!--Imagens/Texto do vidro-->
+    <div id="help_carProblems">     This button allows you to check if this car has any problem                                                                                            </div>
+    <div id="help_personProblems">  This button allows you to check driver conditions                                                                                                      </div>
+    <div id="help_help">            This button allows you to see keyboard shortcuts as well as the main buttons description. As for the other buttons, the description will show up 5 seconds after the button appear                </div>
+
+    <div >      <img src='images/help/keyboard.gif' alt='[]' id="keyboard"/>        </div>
+
+    <div id="help_moreDetails">     Show more Info                                       </div>
+    <div id="help_lessDetails">     Show less Info                                       </div>
+    <div id="help_car">             Search for car problems                              </div>
+    <div id="help_list">            See all the problems that the car has already found  </div>
+    <div id="help_listProblem">     Show Info about this problem                         </div>
+
+    <embed id="clock" src="http://www.clocklink.com/clocks/5005-blue.swf?TimeZone=GMT0100&" wmode="transparent" type="application/x-shockwave-flash" />
+
+</body>
+</html>

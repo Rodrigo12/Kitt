@@ -1,0 +1,800 @@
+/*Botões Volante*/
+
+#clock
+{
+    position: absolute;
+    left: 46%;
+    top: 51%;
+    opacity:1;
+    width: 10%;
+    height: 2.5%;
+}
+
+#up
+{
+    position: absolute;
+    cursor:pointer;
+    left: 21%;
+    top: 64.5%;
+    opacity:1;
+}
+#down
+{
+    position: absolute;
+    cursor:pointer;
+    left: 21%;
+    top: 78%;
+    opacity:1;
+}
+
+#enter
+{
+    position: absolute;
+    cursor:pointer;
+    left: 25%;
+    top: 71%;
+    opacity:1;
+}
+#back
+{
+    position: absolute;
+    cursor:pointer;
+    left: 17%;
+    top: 71%;
+    opacity:1;
+}
+
+#rightHorn
+{
+    position: absolute;
+    cursor:pointer;
+    left: 13.5%;
+    top: 70%;
+    opacity:1;
+}
+#leftHorn
+{
+    position: absolute;
+    cursor:pointer;
+    left: 29.5%;
+    top: 70%;
+    opacity:1;
+}
+
+
+
+/*Botões/ imagens de login*/
+
+#fingerPrint
+{
+    position: absolute;
+    cursor:pointer;
+    left: 46.5%;
+    top: 53%;
+    width: 3.5%;
+    height: 8%;
+    opacity:1;
+}
+
+#fingerPrint:hover
+{
+    position: absolute;
+    cursor:pointer;
+    left: 46.5%;
+    top: 53%;
+    width: 3.5%;
+    height: 8%;
+    opacity:0.4;
+}
+
+#welcome
+{   visibility:hidden;
+    position: absolute;
+    left: 43.5%;
+    top: 52%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#exit
+{   visibility:hidden;
+    cursor:pointer;
+    position: absolute;
+    left: 46.5%;
+    top: 53%;
+    width: 10%;
+    height: 10%;
+    opacity:0.6;
+}
+
+#exit:hover
+{   visibility:hidden;
+    cursor:pointer;
+    position: absolute;
+    left: 46.5%;
+    top: 53%;
+    width: 10%;
+    height: 10%;
+    opacity:0.2;
+}
+
+/*Botões do menu principal*/
+#led
+{
+    visibility:hidden;
+    position: absolute;
+    left: 4%;
+    top: 11%;
+    opacity:1;
+    z-index:1;
+}
+
+
+#car
+{   visibility:hidden;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    opacity:1;
+}
+
+#person
+{   visibility:hidden;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+    opacity:1;
+}
+
+#help
+{   visibility:hidden;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    opacity:1;
+}
+
+/*Botões para escolher entre lista ou verificar problemas do carro*/
+#carWhite
+{
+    visibility:hidden;
+    position: absolute;
+    left: 38%;
+    top: 31%;
+    opacity:1;
+}
+ #listOfProblems
+{
+    visibility:hidden;
+    position: absolute;
+    left: 52%;
+    top: 29.5%;
+    opacity:1;
+}
+
+/*Botões/imagens quando aparece um problema do carro*/
+
+#sideView
+{   visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+#upView
+{   visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#sideViewTires
+{   visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+#upViewTires
+{   visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#sideViewAnalysis
+{   visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+#upViewAnalysis
+{   visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningFreios
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningPneus
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningSuspensao
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningBateria
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningMotor
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningVelas
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#ok
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#almostOk
+{   visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#showDetails
+{   visibility:hidden;
+    position: absolute;
+    left: 65%;
+    top: 38%;
+    opacity:1;
+}
+
+#impossibleDrive
+{
+    visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#loading
+{
+    visibility:hidden;
+    position: absolute;
+    left: 46%;
+    top: 30%;
+    opacity:1;
+}
+
+#vela
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#motor
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#battery
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 18%;
+    opacity:1;
+}
+
+
+#brakes
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+
+#suspension
+{
+    visibility:hidden;
+    position: absolute;
+    left: 74%;
+    top: 15%;
+    opacity:1;
+}
+
+
+#tires
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#velaProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#motorProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#batteryProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 18%;
+    opacity:1;
+}
+
+
+#brakesProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+
+#suspensionProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 74%;
+    top: 15%;
+    opacity:1;
+}
+
+
+#tiresProblemView
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 15%;
+    opacity:1;
+}
+
+#repair
+{
+    visibility:hidden;
+    position: absolute;
+    left: 78%;
+    top: 78%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#txtSuspension
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:15%;
+    height:17%;
+    opacity:1;
+}
+
+#txtTires
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:16%;
+    height:19%;
+    opacity:1;
+}
+
+#txtBattery
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:15%;
+    height:17%;
+    opacity:1;
+}
+
+#txtEngine
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:15%;
+    height:17%;
+    opacity:1;
+}
+
+#txtBrakes
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:15%;
+    height:17%;
+    opacity:1;
+}
+
+#txtPlugs
+{
+    visibility:hidden;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.75) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 58.5%;
+    top: 12%;
+    width:15%;
+    height:17%;
+    opacity:1;
+}
+
+/*Segunda funcionalidade -Estado do Condutor-*/
+
+#personAnalysis
+{
+    visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+
+#personDrowsiness
+{
+    visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+
+#personDrunk
+{
+    visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+
+#personSuperDrunk
+{
+    visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+
+#UnableDrive
+{
+    visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningAlcohol
+{
+    visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#warningDrowsiness
+{
+    visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#noDriverProblems
+{
+    visibility:hidden;
+    position: absolute;
+    left: 44%;
+    top: 30%;
+    width: 10%;
+    height: 10%;
+    opacity:1;
+}
+
+#personOk
+{
+    visibility:hidden;
+    position: absolute;
+    left: 60%;
+    top: 23%;
+    width: 5%;
+    height: 5%;
+    opacity:1;
+}
+
+/*Help texts and images*/
+
+#help_carProblems
+{
+    /*padding:50px;*/
+    display:none;
+    position:fixed;
+    text-align:center;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69);
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:9%;
+    top:11%;
+    width:20%;
+    height:7%;
+}
+
+#help_personProblems
+{
+    /*padding:50px;*/
+    display:none;
+    position:fixed;
+    text-align:center;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69);
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:11%;
+    top:21%;
+    width:20%;
+    height:5%;
+}
+
+#help_help
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:14%;
+    top:31%;
+    width:23%;
+    height:10%;
+}
+
+#keyboard
+{
+    display:none;
+    position: absolute;
+    background-color:rgba(1, 71, 146, 0.69);
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left: 59%;
+    top: 13%;
+    width: 25%;
+    height: 30%;
+    opacity:1;
+}
+
+#help_moreDetails
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:69%;
+    top:40%;
+    width:7%;
+    height:3%;
+}
+#help_lessDetails
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:69%;
+    top:40%;
+    width:7%;
+    height:3%;
+}
+#help_car
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:36.5%;
+    top:40.5%;
+    width:10%;
+    height:3%;
+}
+#help_list
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:49.5%;
+    top:40.5%;
+    width:10%;
+    height:6%;
+}
+#help_listProblem
+{
+    /*padding:50px;*/
+    display:none;
+    text-align:center;
+    position:fixed;
+    font-family:'Sakkal Majalla';
+    color:white;
+    background-color:rgba(1, 71, 146, 0.69) /*rgba(129, 125, 125, 0.49)*/;
+    border:solid 1px rgba(0, 0, 0, 0.90);
+    border-radius:4px 4px;
+    left:39%;
+    top:30%;
+    width:10%;
+    height:6%;
+}
+
